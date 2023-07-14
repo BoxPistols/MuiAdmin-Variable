@@ -13,6 +13,7 @@ import {
   Mail as MailIcon
 } from "@mui/icons-material";
 import { MockText, Drawer, DrawerHeader } from "./util";
+import { ApiFilterTable } from "./Table/ApiFilterTable";
 
 type SideNavProps = {
   open: boolean;
@@ -53,7 +54,7 @@ export const SideNav = ({ open }: SideNavProps) => {
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
         <MockText />
-        <MockText />
+        <ApiFilterTable />
       </Box>
     </Box>
   );

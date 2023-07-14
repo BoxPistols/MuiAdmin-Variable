@@ -26,10 +26,11 @@ const fontWeight = {
   medium: 500,
   bold: 700,
 }
+
 const lineHeight = {
-  small: 1.5,
-  medium: 1.75,
-  large: 2.0,
+  small: 1.35,
+  medium: 1.5,
+  large: 1.85,
 }
 
 export const theme = createTheme({
@@ -45,7 +46,6 @@ export const theme = createTheme({
     },
   },
 
-  
   palette: {
     primary: {
       main: '#4488aa',
@@ -54,13 +54,13 @@ export const theme = createTheme({
       primary: '#234',
     },
   },
-  
+
   // Typography
   typography: {
     // すべての Typography コンポーネントで適用されるデフォルトのテキストカラーを設定します。
     allVariants: {
       color: 'rgba(20, 30, 10, 0.8)',
-      lineHeight: 1.5,
+      lineHeight: lineHeight.medium,
       fontFamily:
         ' "Futura", "Helvetica Neue", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "BIZ UDPゴシック", "Noto Sans JP", Helvetica, Arial, sans-serif !important',
       textTransform: 'inherit',
@@ -71,47 +71,47 @@ export const theme = createTheme({
     h1: {
       fontWeight: fontWeight.bold,
       fontSize: baseFontSize * 2,
-      lineHeight: 1.35,
+      lineHeight: lineHeight.small,
     },
     h2: {
       fontWeight: fontWeight.bold,
       fontSize: baseFontSize * 1.75,
-      lineHeight: 1.35,
+      lineHeight: lineHeight.small,
     },
     h3: {
       fontWeight: fontWeight.bold,
       fontSize: baseFontSize * 1.5,
-      lineHeight: 1.35,
+      lineHeight: lineHeight.small,
     },
     h4: {
       fontWeight: fontWeight.bold,
       fontSize: baseFontSize * 1.25,
-      lineHeight: 1.35,
+      lineHeight: lineHeight.small,
     },
     h5: {
       fontWeight: fontWeight.bold,
       fontSize: baseFontSize * 1.1,
-      lineHeight: 1.35,
+      lineHeight: lineHeight.small,
     },
     h6: {
       fontWeight: fontWeight.bold,
       fontSize: baseFontSize * 1,
-      lineHeight: 1.35,
+      lineHeight: lineHeight.small,
     },
     subtitle1: {
-      lineHeight: 1.4,
+      lineHeight: lineHeight.medium,
       fontSize: baseFontSize * 0.85,
     },
     subtitle2: {
-      lineHeight: 1.4,
+      lineHeight: lineHeight.medium,
       fontSize: baseFontSize * 0.75,
     },
     caption: {
-      lineHeight: 1.4,
+      lineHeight: lineHeight.medium,
       fontSize: baseFontSize * 0.85,
     },
     overline: {
-      lineHeight: 1.4,
+      lineHeight: lineHeight.medium,
       fontSize: baseFontSize * 0.75,
     },
     button: {
@@ -128,7 +128,7 @@ export const theme = createTheme({
             display: 'block',
             fontSize: '2.4rem',
             fontWeight: 700,
-            lineHeight: 1.5,
+            lineHeight: lineHeight.medium,
             color: 'tomato',
           },
         },
@@ -138,7 +138,7 @@ export const theme = createTheme({
             fontSize: '2.2rem',
             fontWeight: 700,
             color: 'tomato',
-            lineHeight: 1.5,
+            lineHeight: lineHeight.medium,
           },
         },
       ],
@@ -146,7 +146,7 @@ export const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          height: 44,          
+          height: 44,
         },
       },
     },

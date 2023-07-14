@@ -1,6 +1,5 @@
 import { styled } from '@mui/material/styles'
-import { Typography, TypographyProps, TypographyTypeMap } from '@mui/material'
-import { OverridableComponent } from '@mui/material/OverridableComponent'
+import { Typography, TypographyProps } from '@mui/material'
 import React from 'react'
 
 export const Display1 = styled((props: TypographyProps) => {
@@ -8,7 +7,7 @@ export const Display1 = styled((props: TypographyProps) => {
 })(() => ({
   fontSize: '2.4rem',
   fontWeight: 700,
-  lineHeight: 1.5,
+  lineHeight: 'lineHeight.large',
   color: 'teal',
 }))
 

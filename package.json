@@ -10,8 +10,15 @@
     "react-dom": "latest",
     "typescript": "latest"
   },
-  "description": "https://github.com/mui/material-ui/blob/v5.12.2/docs/data/material/components/drawers/MiniDrawer.tsx",
+  "description": "MiniDrawer",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.0",
     "react-scripts": "latest"
   },
   "main": "index.tsx",
@@ -19,11 +26,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "keywords": [],
   "name": "mui-customtheme",
   "version": "0.0.400",
+  "license": "MIT",
   "browserslist": {
     "production": [
       ">0.2%",

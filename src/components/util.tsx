@@ -90,13 +90,13 @@ export const MockText = () => {
   return (
     <>
       <Typography variant="h1">Variant h1</Typography>
-      <Typography variant="h2">Variant h2</Typography>
+      {/* <Typography variant="h2">Variant h2</Typography> */}
 
       <Typography variant="display1">Add Theme Display 1</Typography>
-      <Typography variant="display2">Add Theme Display 2</Typography>
+      {/* <Typography variant="display2">Add Theme Display 2</Typography> */}
 
       <Display1>CustomTypography Display1</Display1>
-      <Display2>CustomTypography Display2</Display2>
+      {/* <Display2>CustomTypography Display2</Display2> */}
 
       <Typography paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -104,13 +104,6 @@ export const MockText = () => {
         non enim praesent elementum facilisis leo vel. Risus at ultrices mi
         tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non
         tellus. Convallis convallis tellus id interdum velit laoreet id donec
-        ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl
-        suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod
-        quis viverra nibh cras. Metus vulputate eu scelerisque felis imperdiet
-        proin fermentum leo. Mauris commodo quis imperdiet massa tincidunt. Cras
-        tincidunt lobortis feugiat vivamus at augue. At augue eget arcu dictum
-        varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt.
-        Lorem donec massa sapien faucibus et molestie ac.
       </Typography>
     </>
   );

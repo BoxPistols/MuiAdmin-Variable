@@ -14,7 +14,8 @@ export const ApiFilterTable: React.FC = () => {
   const [category, setCategory] = useState("");
   const [brand, setBrand] = useState("");
   const [rating, setRating] = useState("");
-  const [active, setActive] = useState<boolean>();
+  const [active, setActive] = useState<boolean | null>(null);
+
 
   useEffect(() => {
     setLoading(true);
@@ -41,14 +42,19 @@ export const ApiFilterTable: React.FC = () => {
     if (category && item.category !== category) return false;
     if (brand && item.brand !== brand) return false;
     if (rating && !item.rating.toString().includes(rating)) return false;
-    if (active !== undefined && item.active !== active) return false;
-
+    // falseまたはnullの時は全データを表示する
+    if (active !== null && active !== false && item.active !== active) return false;
+  
     return true;
   });
+  
 
   return (
     <>
-      <FilterForm title={title} setTitle={setTitle} price={price} setPrice={setPrice} stock={stock} setStock={setStock} category={category} setCategory={setCategory} brand={brand} setBrand={setBrand} rating={rating} setRating={setRating} active={active} setActive={setActive} />
+      <FilterForm title={title} setTitle={setTitle} price={price} setPrice={setPrice} stock={stock} setStock={setStock} category={category} setCategory={setCategory} brand={brand} setBrand={setBrand} rating={rating} setRating={setRating}
+        active={active}
+        setActive={setActive}
+      />
       <DynamicTable rows={filteredData} setData={setData} />
     </>
   );

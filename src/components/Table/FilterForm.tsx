@@ -15,8 +15,8 @@ type FilterFormProps = {
   setBrand: (value: string) => void;
   rating: string;
   setRating: (value: string) => void;
-  active: boolean | undefined;
-  setActive: (value: boolean | undefined) => void;
+  active: boolean | null;
+  setActive: React.Dispatch<React.SetStateAction<boolean | null>>;
 };
 
 const StyledFormControl = styled(FormControl)`
@@ -58,9 +58,15 @@ export const FilterForm: React.FC<FilterFormProps> = ({ title, setTitle, price, 
         control={
           <Checkbox
             checked={active ?? false}
-            onChange={(e) => setActive(e.target.checked)}
-          />
-        }
+            indeterminate={active === null}
+            onChange={(e) => {
+              if (e.target.indeterminate) {
+                setActive(null);
+              } else {
+                setActive(e.target.checked);
+              }
+            }}
+          />}
         label="Active"
       />
     </Box>

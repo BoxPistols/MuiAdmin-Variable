@@ -1,0 +1,169 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "トヨタ・プリウス",
+      "description": "高い燃費性能と快適な走行が魅力のハイブリッドカー。",
+      "price": 2400000,
+      "stock": 12,
+      "brand": "トヨタ",
+      "category": "ハイブリッド",
+      "rating": 4.5,
+      "active": false
+    },
+    {
+      "id": 2,
+      "title": "ホンダ・シビック",
+      "description": "スポーツ性と実用性を兼ね備えたコンパクトカー。",
+      "price": 2200000,
+      "stock": 8,
+      "brand": "ホンダ",
+      "category": "セダン",
+      "rating": 4.3,
+      "active": true
+    },
+    {
+      "id": 3,
+      "title": "マツダ・ロードスター",
+      "description": "軽量ボディと高出力エンジンが魅力のスポーツカー。",
+      "price": 2800000,
+      "stock": 3,
+      "brand": "マツダ",
+      "category": "スポーツカー",
+      "rating": 4.8,
+      "active": false
+    },
+    {
+      "id": 4,
+      "title": "スバル・レガシィ",
+      "description": "高い安全性能と快適な走行が魅力のセダン。",
+      "price": 2600000,
+      "stock": 5,
+      "brand": "スバル",
+      "category": "セダン",
+      "rating": 4.6,
+      "active": true
+    },
+    {
+      "id": 5,
+      "title": "トヨタ・ハイエース",
+      "description": "広い室内と高い積載性能が魅力のミニバン。",
+      "price": 3200000,
+      "stock": 2,
+      "brand": "トヨタ",
+      "category": "ミニバン",
+      "rating": 4.9,
+      "active": true
+    },
+    {
+      "id": 6,
+      "title": "トヨタ・ランドクルーザー",
+      "description": "高い走破性能と快適な走行が魅力のSUV。",
+      "price": 3800000,
+      "stock": 1,
+      "brand": "トヨタ",
+      "category": "SUV",
+      "rating": 4.7,
+      "active": true
+    },
+    {
+      "id": 7,
+      "title": "トヨタ・アルファード",
+      "description": "高級感あふれる室内と快適な走行が魅力のミニバン。",
+      "price": 4200000,
+      "stock": 0,
+      "brand": "トヨタ",
+      "category": "ミニバン",
+      "rating": 4.9,
+      "active": false
+    },
+    {
+      "id": 8,
+      "title": "トヨタ・ハリアー",
+      "description": "高級感あふれる室内と快適な走行が魅力のSUV。",
+      "price": 3800000,
+      "stock": 0,
+      "brand": "トヨタ",
+      "category": "SUV",
+      "rating": 4.7,
+      "active": false
+    },
+    {
+      "id": 9,
+      "title": "トヨタ・ヴェルファイア",
+      "description": "高級感あふれる室内と快適な走行が魅力のミニバン。",
+      "price": 4200000,
+      "stock": 0,
+      "brand": "トヨタ",
+      "category": "ミニバン",
+      "rating": 4.9,
+      "active": false
+    },
+    {
+      "id": 10,
+      "title": "トヨタ・ヴォクシー",
+      "description": "高級感あふれる室内と快適な走行が魅力のSUV。",
+      "price": 3800000,
+      "stock": 0,
+      "brand": "トヨタ",
+      "category": "SUV",
+      "rating": 4.7,
+      "active": false
+    },
+    {
+      "id": 11,
+      "title": "トヨタ・プリウス",
+      "description": "高い燃費性能と快適な走行が魅力のハイブリッドカー。",
+      "price": 2400000,
+      "stock": 12,
+      "brand": "トヨタ",
+      "category": "ハイブリッド",
+      "rating": 4.5,
+      "active": true
+    },
+    {
+      "id": 12,
+      "title": "ホンダ・シビック",
+      "description": "スポーツ性と実用性を兼ね備えたコンパクトカー。",
+      "price": 2200000,
+      "stock": 8,
+      "brand": "ホンダ",
+      "category": "セダン",
+      "rating": 4.3,
+      "active": true
+    },
+    {
+      "id": 13,
+      "title": "マツダ・ロードスター",
+      "description": "軽量ボディと高出力エンジンが魅力のスポーツカー。",
+      "price": 2800000,
+      "stock": 3,
+      "brand": "マツダ",
+      "category": "スポーツカー",
+      "rating": 4.8,
+      "active": true
+    },
+    {
+      "id": 14,
+      "title": "スバル・レガシィ",
+      "description": "高い安全性能と快適な走行が魅力のセダン。",
+      "price": 2600000,
+      "stock": 5,
+      "brand": "スバル",
+      "category": "セダン",
+      "rating": 4.6,
+      "active": true
+    },
+    {
+      "id": 15,
+      "title": "トヨタ・ハイエース",
+      "description": "広い室内と高い積載性能が魅力のミニバン。",
+      "price": 3200000,
+      "stock": 2,
+      "brand": "トヨタ",
+      "category": "ミニバン",
+      "rating": 4.9,
+      "active": true
+    }
+  ]
+}

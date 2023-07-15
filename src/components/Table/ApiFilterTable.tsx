@@ -5,6 +5,7 @@ import { Product, DynamicTable } from "./DynamicTable";
 import { FilterForm } from "./FilterForm";
 
 export const ApiFilterTable: React.FC = () => {
+
   const [data, setData] = useState<Product[]>([]);
   const [loading, setLoading] = useState(false);
   const [title, setTitle] = useState("");
@@ -13,18 +14,17 @@ export const ApiFilterTable: React.FC = () => {
   const [category, setCategory] = useState("");
   const [brand, setBrand] = useState("");
   const [rating, setRating] = useState("");
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState<boolean>();
 
   useEffect(() => {
     setLoading(true);
-    fetch("https://dummyjson.com/products")
+    fetch("/data/products.json")
       .then((response) => response.json())
       .then((data) => {
         setData(data.products);
         setLoading(false);
       });
   }, []);
-
 
   if (loading) {
     return (
@@ -35,15 +35,15 @@ export const ApiFilterTable: React.FC = () => {
   }
 
   const filteredData = data.filter((item) => {
-    return (
-      item.title.includes(title) &&
-      item.price.toString().includes(price) &&
-      item.stock.toString().includes(stock) &&
-      (category ? item.category === category : true) &&
-      (brand ? item.brand === brand : true) &&
-      item.rating.toString().includes(rating) &&
-      item.active === active
-    );
+    if (title && !item.title.includes(title)) return false;
+    if (price && !item.price.toString().includes(price)) return false;
+    if (stock && !item.stock.toString().includes(stock)) return false;
+    if (category && item.category !== category) return false;
+    if (brand && item.brand !== brand) return false;
+    if (rating && !item.rating.toString().includes(rating)) return false;
+    if (active !== undefined && item.active !== active) return false;
+
+    return true;
   });
 
   return (

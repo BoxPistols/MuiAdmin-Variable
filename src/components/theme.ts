@@ -2,8 +2,8 @@ import { createTheme } from '@mui/material/styles'
 
 declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
-    display1: true
-    display2: true
+    display1?: true
+    display2?: true
   }
 }
 
@@ -126,7 +126,7 @@ export const theme = createTheme({
           props: { variant: 'display1' },
           style: {
             display: 'block',
-            fontSize: '2.4rem',
+            fontSize: '2rem',
             fontWeight: 700,
             lineHeight: lineHeight.medium,
             color: 'tomato',
@@ -135,7 +135,7 @@ export const theme = createTheme({
         {
           props: { variant: 'display2' },
           style: {
-            fontSize: '2.2rem',
+            fontSize: '1.75rem',
             fontWeight: 700,
             color: 'tomato',
             lineHeight: lineHeight.medium,

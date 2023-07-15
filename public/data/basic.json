@@ -1,0 +1,233 @@
+[
+    {
+        "id": 171,
+        "company": "株式会社佐藤銀行",
+        "nama": "橋本 太郎",
+        "mail": "nakagawahanako@example.com",
+        "tel": "080-8763-3076",
+        "address": "福島県白井市筑土八幡町35丁目18番16号 シティ勝どき618",
+        "price": 3727.89,
+        "sale": "工業用ロボット",
+        "status": false
+    },
+    {
+        "id": 499,
+        "company": "株式会社山本銀行",
+        "nama": "渡辺 七夏",
+        "mail": "kumikotakahashi@example.com",
+        "tel": "080-5928-2658",
+        "address": "徳島県香取郡神崎町東和町41丁目27番5号 シティ上吉羽361",
+        "price": 3370.39,
+        "sale": "省エネLED照明",
+        "status": false
+    },
+    {
+        "id": 189,
+        "company": "株式会社長谷川鉱業",
+        "nama": "小林 学",
+        "mail": "hanakokobayashi@example.net",
+        "tel": "070-2950-2753",
+        "address": "宮崎県長生郡長南町戸塚町11丁目4番5号",
+        "price": 583.73,
+        "sale": "省エネLED照明",
+        "status": true
+    },
+    {
+        "id": 483,
+        "company": "有限会社高橋食品",
+        "nama": "村上 陽子",
+        "mail": "hanako55@example.org",
+        "tel": "070-8836-7234",
+        "address": "兵庫県山武市高田馬場36丁目16番19号 クレスト蔵前273",
+        "price": 4984.84,
+        "sale": "省エネLED照明",
+        "status": false
+    },
+    {
+        "id": 118,
+        "company": "合同会社吉田食品",
+        "nama": "三浦 亮介",
+        "mail": "rikakato@example.org",
+        "tel": "080-9667-6387",
+        "address": "鳥取県山武郡横芝光町東和町31丁目2番7号 コーポ蔵前076",
+        "price": 3391.06,
+        "sale": "高圧洗浄機",
+        "status": true
+    },
+    {
+        "id": 169,
+        "company": "有限会社橋本運輸",
+        "nama": "林 涼平",
+        "mail": "minoru11@example.com",
+        "tel": "45-4925-8382",
+        "address": "島根県国立市北青山27丁目20番3号 シャルム上高野523",
+        "price": 4132.03,
+        "sale": "省エネLED照明",
+        "status": false
+    },
+    {
+        "id": 357,
+        "company": "高橋情報合同会社",
+        "nama": "小林 学",
+        "mail": "syamaguchi@example.org",
+        "tel": "64-3229-5127",
+        "address": "栃木県鴨川市上広谷20丁目2番2号 シャルム丸の内ＪＰタワー024",
+        "price": 3279.92,
+        "sale": "工業用ロボット",
+        "status": true
+    },
+    {
+        "id": 262,
+        "company": "有限会社斎藤通信",
+        "nama": "伊藤 花子",
+        "mail": "ysato@example.net",
+        "tel": "070-7598-4752",
+        "address": "滋賀県三宅島三宅村平河町41丁目9番17号 パレス箭坪621",
+        "price": 2626.55,
+        "sale": "工業用ロボット",
+        "status": false
+    },
+    {
+        "id": 734,
+        "company": "坂本建設有限会社",
+        "nama": "松本 花子",
+        "mail": "yamadasayuri@example.net",
+        "tel": "53-5433-5626",
+        "address": "青森県西多摩郡奥多摩町美原町11丁目19番3号",
+        "price": 2537.28,
+        "sale": "省エネLED照明",
+        "status": true
+    },
+    {
+        "id": 614,
+        "company": "吉田運輸株式会社",
+        "nama": "山口 陽子",
+        "mail": "kumiko21@example.org",
+        "tel": "89-7571-7766",
+        "address": "群馬県世田谷区東大和町31丁目20番3号",
+        "price": 3588.52,
+        "sale": "省エネLED照明",
+        "status": false
+    },
+    {
+        "id": 750,
+        "company": "株式会社福田通信",
+        "nama": "斉藤 舞",
+        "mail": "fujiiakira@example.org",
+        "tel": "080-9073-8930",
+        "address": "佐賀県印旛郡酒々井町九段南4丁目9番9号 平須賀ハイツ256",
+        "price": 4164.04,
+        "sale": "自動化機器",
+        "status": false
+    },
+    {
+        "id": 622,
+        "company": "近藤通信株式会社",
+        "nama": "高橋 涼平",
+        "mail": "takahashiyumiko@example.com",
+        "tel": "31-2452-8081",
+        "address": "福島県町田市一ツ橋26丁目18番13号 中川崎アーバン241",
+        "price": 3222.54,
+        "sale": "省エネLED照明",
+        "status": true
+    },
+    {
+        "id": 691,
+        "company": "株式会社清水水産",
+        "nama": "松本 太一",
+        "mail": "fujitamai@example.com",
+        "tel": "070-9769-0693",
+        "address": "福岡県横浜市青葉区東上野37丁目24番5号",
+        "price": 4070.41,
+        "sale": "工業用ロボット",
+        "status": true
+    },
+    {
+        "id": 728,
+        "company": "渡辺建設株式会社",
+        "nama": "斎藤 結衣",
+        "mail": "satochiyo@example.org",
+        "tel": "090-1603-9010",
+        "address": "愛媛県横浜市栄区氏家新田24丁目18番10号",
+        "price": 3015.69,
+        "sale": "自動化機器",
+        "status": false
+    },
+    {
+        "id": 493,
+        "company": "山本食品合同会社",
+        "nama": "田中 聡太郎",
+        "mail": "yasuhiro93@example.org",
+        "tel": "66-2258-7455",
+        "address": "滋賀県中央区松浦町19丁目3番19号 クレスト二つ室739",
+        "price": 2247.15,
+        "sale": "高圧洗浄機",
+        "status": true
+    },
+    {
+        "id": 441,
+        "company": "株式会社西村食品",
+        "nama": "福田 浩",
+        "mail": "osamuyamada@example.net",
+        "tel": "090-1704-9611",
+        "address": "長崎県我孫子市東三島6丁目2番2号 長畑パーク034",
+        "price": 4330.08,
+        "sale": "省エネLED照明",
+        "status": false
+    },
+    {
+        "id": 753,
+        "company": "合同会社田中印刷",
+        "nama": "吉田 拓真",
+        "mail": "yuta58@example.net",
+        "tel": "66-3878-7793",
+        "address": "岩手県狛江市権現堂35丁目9番12号 パーク外神田237",
+        "price": 4300.14,
+        "sale": "高圧洗浄機",
+        "status": false
+    },
+    {
+        "id": 843,
+        "company": "有限会社後藤情報",
+        "nama": "田中 くみ子",
+        "mail": "shotasato@example.org",
+        "tel": "070-9185-3818",
+        "address": "三重県福生市箪笥町24丁目10番1号 シャルム箪笥町379",
+        "price": 880.78,
+        "sale": "高圧洗浄機",
+        "status": true
+    },
+    {
+        "id": 198,
+        "company": "有限会社鈴木ガス",
+        "nama": "中村 真綾",
+        "mail": "hsato@example.com",
+        "tel": "090-0745-3302",
+        "address": "石川県港区東浅草37丁目26番1号",
+        "price": 2275.35,
+        "sale": "省エネLED照明",
+        "status": false
+    },
+    {
+        "id": 525,
+        "company": "山本建設合同会社",
+        "nama": "斉藤 美加子",
+        "mail": "kondosotaro@example.net",
+        "tel": "070-8403-9627",
+        "address": "徳島県中野区轟31丁目18番13号 津久戸町パレス364",
+        "price": 1971.23,
+        "sale": "高圧洗浄機",
+        "status": false
+    },
+    {
+        "id": 372,
+        "company": "石井電気合同会社",
+        "nama": "山田 幹",
+        "mail": "yamadahiroshi@example.com",
+        "tel": "090-0460-8805",
+        "address": "福島県東大和市四番町19丁目16番15号 シティ四区町247",
+        "price": 1373.76,
+        "sale": "工業用ロボット",
+        "status": false
+    }
+]

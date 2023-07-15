@@ -6,6 +6,8 @@ from faker import Faker
 fake = Faker('ja_JP')
 
 # Define a function to generate a random product
+
+
 def generate_product():
     return {
         "id": fake.unique.random_number(digits=5),
@@ -21,6 +23,7 @@ def generate_product():
         "images": [fake.image_url() for _ in range(5)],
         "active": random.choice([True, False]),
     }
+
 
 # Generate 100 products
 products = [generate_product() for _ in range(100)]

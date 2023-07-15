@@ -1,6 +1,6 @@
 // ApiFilterTable.tsx
 import React, { useState, useEffect } from "react";
-import { Box, CircularProgress } from "@mui/material";
+import { Box, Button, CircularProgress } from "@mui/material";
 import { Product, DynamicTable } from "./DynamicTable";
 import { FilterForm } from "./FilterForm";
 
@@ -14,11 +14,12 @@ export const ApiFilterTable: React.FC = () => {
   const [category, setCategory] = useState("");
   const [brand, setBrand] = useState("");
   const [rating, setRating] = useState("");
-  const [active, setActive] = useState<boolean>();
+  const [active, setActive] = useState<boolean | null>(null);
+
 
   useEffect(() => {
     setLoading(true);
-    fetch("/data/products.json")
+    fetch("/data/product.json")
       .then((response) => response.json())
       .then((data) => {
         setData(data.products);
@@ -34,6 +35,16 @@ export const ApiFilterTable: React.FC = () => {
     );
   }
 
+  const handleClear = () => {
+    setTitle("");
+    setPrice("");
+    setStock("");
+    setCategory("");
+    setBrand("");
+    setRating("");
+    setActive(null);
+  };
+
   const filteredData = data.filter((item) => {
     if (title && !item.title.includes(title)) return false;
     if (price && !item.price.toString().includes(price)) return false;
@@ -41,14 +52,19 @@ export const ApiFilterTable: React.FC = () => {
     if (category && item.category !== category) return false;
     if (brand && item.brand !== brand) return false;
     if (rating && !item.rating.toString().includes(rating)) return false;
-    if (active !== undefined && item.active !== active) return false;
+    // falseまたはnullの時は全データを表示する
+    if (active !== null && active !== false && item.active !== active) return false;
 
     return true;
   });
 
   return (
     <>
-      <FilterForm title={title} setTitle={setTitle} price={price} setPrice={setPrice} stock={stock} setStock={setStock} category={category} setCategory={setCategory} brand={brand} setBrand={setBrand} rating={rating} setRating={setRating} active={active} setActive={setActive} />
+      <FilterForm title={title} setTitle={setTitle} price={price} setPrice={setPrice} stock={stock} setStock={setStock} category={category} setCategory={setCategory} brand={brand} setBrand={setBrand} rating={rating} setRating={setRating}
+        active={active}
+        setActive={setActive}
+      />
+      <Button onClick={handleClear}>All Clear</Button>
       <DynamicTable rows={filteredData} setData={setData} />
     </>
   );

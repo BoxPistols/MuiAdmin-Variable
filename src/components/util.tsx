@@ -9,7 +9,7 @@ import {
   Theme,
 } from '@mui/material'
 import { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar'
-import { Display1 } from './CustomTypography'
+// import { Display1 } from './CustomTypography'
 
 const drawerWidth = 180
 
@@ -89,21 +89,15 @@ export const DrawerHeader = styled('div')(({ theme }) => ({
 export const MockText = () => {
   return (
     <>
-      <Typography variant="h1">Variant h1</Typography>
+      {/* <Typography variant="h1">Variant h1</Typography> */}
       {/* <Typography variant="h2">Variant h2</Typography> */}
-
       <Typography variant="display1">Add Theme Display 1</Typography>
       {/* <Typography variant="display2">Add Theme Display 2</Typography> */}
-
-      <Display1>CustomTypography Display1</Display1>
+      {/* <Display1>CustomTypography Display1</Display1> */}
       {/* <Display2>CustomTypography Display2</Display2> */}
-
       <Typography paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus
-        non enim praesent elementum facilisis leo vel. Risus at ultrices mi
-        tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non
-        tellus. Convallis convallis tellus id interdum velit laoreet id donec
       </Typography>
     </>
   )

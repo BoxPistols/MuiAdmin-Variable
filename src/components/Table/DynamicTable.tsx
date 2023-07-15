@@ -66,22 +66,28 @@ export const DynamicTable: React.FC<DynamicTableProps> = ({ rows, setData }) => 
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
-            <StyledTableRow key={row.id}>
-              <StyledTableCell component="th" scope="row">
-                {row.title}
-              </StyledTableCell>
-              <StyledTableCell align="right">{row.price}</StyledTableCell>
-              <StyledTableCell align="right">{row.stock}</StyledTableCell>
-              <StyledTableCell align="right">{row.category}</StyledTableCell>
-              <StyledTableCell align="right">{row.brand}</StyledTableCell>
-              <StyledTableCell align="right">{row.rating}</StyledTableCell>
-              <StyledTableCell align="right">{row.active ? "Yes" : "No"}</StyledTableCell>
-              <StyledTableCell align="right">
-                <RowActions actions={["detail", "edit", "delete"]} onAction={(action) => handleAction(action, row)} />
-              </StyledTableCell>
+          {rows.length > 0 ? (
+            rows.map((row) => (
+              <StyledTableRow key={row.id}>
+                <StyledTableCell component="th" scope="row">
+                  {row.title}
+                </StyledTableCell>
+                <StyledTableCell align="right">{row.price}</StyledTableCell>
+                <StyledTableCell align="right">{row.stock}</StyledTableCell>
+                <StyledTableCell align="right">{row.category}</StyledTableCell>
+                <StyledTableCell align="right">{row.brand}</StyledTableCell>
+                <StyledTableCell align="right">{row.rating}</StyledTableCell>
+                <StyledTableCell align="right">{row.active ? "Yes" : "No"}</StyledTableCell>
+                <StyledTableCell align="right">
+                  <RowActions actions={["detail", "edit", "delete"]} onAction={(action) => handleAction(action, row)} />
+                </StyledTableCell>
+              </StyledTableRow>
+            ))
+          ) : (
+            <StyledTableRow>
+              <StyledTableCell align="center" colSpan={8} sx={{ padding: 8 }}>No data</StyledTableCell>
             </StyledTableRow>
-          ))}
+          )}
         </TableBody>
       </Table>
     </TableContainer>

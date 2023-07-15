@@ -1,6 +1,6 @@
 // FilterForm.tsx
 import React from "react";
-import { Box, TextField, Select, MenuItem, FormControl, InputLabel, Checkbox, FormControlLabel } from "@mui/material";
+import { Box, TextField, Select, MenuItem, FormControl, InputLabel, Checkbox, FormControlLabel, styled } from "@mui/material";
 
 type FilterFormProps = {
   title: string;
@@ -19,13 +19,19 @@ type FilterFormProps = {
   setActive: (value: boolean | undefined) => void;
 };
 
+const StyledFormControl = styled(FormControl)`
+  min-width: 180px;
+`;
+
+
+
 export const FilterForm: React.FC<FilterFormProps> = ({ title, setTitle, price, setPrice, stock, setStock, category, setCategory, brand, setBrand, rating, setRating, active, setActive }) => {
   return (
     <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', mb: 2 }}>
       <TextField label="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
       <TextField label="Price" value={price} onChange={(e) => setPrice(e.target.value)} />
       <TextField label="Stock" value={stock} onChange={(e) => setStock(e.target.value)} />
-      <FormControl>
+      <StyledFormControl>
         <InputLabel>Category</InputLabel>
         <Select value={category} onChange={(e) => setCategory(e.target.value)}>
           <MenuItem value="">None</MenuItem>
@@ -35,8 +41,8 @@ export const FilterForm: React.FC<FilterFormProps> = ({ title, setTitle, price, 
           <MenuItem value="SUV">SUV</MenuItem>
           <MenuItem value="クーペ">クーペ</MenuItem>
         </Select>
-      </FormControl>
-      <FormControl>
+      </StyledFormControl>
+      <StyledFormControl>
         <InputLabel>Brand</InputLabel>
         <Select value={brand} onChange={(e) => setBrand(e.target.value)}>
           <MenuItem value="">None</MenuItem>
@@ -46,7 +52,7 @@ export const FilterForm: React.FC<FilterFormProps> = ({ title, setTitle, price, 
           <MenuItem value="マツダ">マツダ</MenuItem>
           <MenuItem value="スズキ">スズキ</MenuItem>
         </Select>
-      </FormControl>
+      </StyledFormControl>
       <TextField label="Rating" value={rating} onChange={(e) => setRating(e.target.value)} />
       <FormControlLabel
         control={

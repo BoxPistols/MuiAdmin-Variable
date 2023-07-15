@@ -18,7 +18,7 @@ export const ApiFilterTable: React.FC = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("/data/products.json")
+    fetch("/data/product.json")
       .then((response) => response.json())
       .then((data) => {
         setData(data.products);

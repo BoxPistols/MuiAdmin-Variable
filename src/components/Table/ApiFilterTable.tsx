@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import { Box, Button, CircularProgress } from "@mui/material";
 import { Product, DynamicTable } from "./DynamicTable";
 import { FilterForm } from "./FilterForm";
+import { GlobalSearch } from "./GlobalSearch";
+import { SortFilter } from "./SortFilter";
 
 export const ApiFilterTable: React.FC = () => {
 
@@ -15,6 +17,9 @@ export const ApiFilterTable: React.FC = () => {
   const [brand, setBrand] = useState("");
   const [rating, setRating] = useState("");
   const [active, setActive] = useState<boolean | null>(null);
+  const [search, setSearch] = useState("");
+  const [sortField, setSortField] = useState("id");
+  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
 
 
   useEffect(() => {
@@ -58,8 +63,11 @@ export const ApiFilterTable: React.FC = () => {
     return true;
   });
 
+
   return (
     <>
+      <GlobalSearch search={search} setSearch={setSearch} />
+      <SortFilter sortField={sortField} setSortField={setSortField} sortDirection={sortDirection} setSortDirection={setSortDirection} />
       <FilterForm title={title} setTitle={setTitle} price={price} setPrice={setPrice} stock={stock} setStock={setStock} category={category} setCategory={setCategory} brand={brand} setBrand={setBrand} rating={rating} setRating={setRating}
         active={active}
         setActive={setActive}

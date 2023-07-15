@@ -1,6 +1,6 @@
 // ApiFilterTable.tsx
 import React, { useState, useEffect } from "react";
-import { Box, CircularProgress } from "@mui/material";
+import { Box, Button, CircularProgress } from "@mui/material";
 import { Product, DynamicTable } from "./DynamicTable";
 import { FilterForm } from "./FilterForm";
 
@@ -35,6 +35,16 @@ export const ApiFilterTable: React.FC = () => {
     );
   }
 
+  const handleClear = () => {
+    setTitle("");
+    setPrice("");
+    setStock("");
+    setCategory("");
+    setBrand("");
+    setRating("");
+    setActive(null);
+  };
+
   const filteredData = data.filter((item) => {
     if (title && !item.title.includes(title)) return false;
     if (price && !item.price.toString().includes(price)) return false;
@@ -44,10 +54,9 @@ export const ApiFilterTable: React.FC = () => {
     if (rating && !item.rating.toString().includes(rating)) return false;
     // falseまたはnullの時は全データを表示する
     if (active !== null && active !== false && item.active !== active) return false;
-  
+
     return true;
   });
-  
 
   return (
     <>
@@ -55,6 +64,7 @@ export const ApiFilterTable: React.FC = () => {
         active={active}
         setActive={setActive}
       />
+      <Button onClick={handleClear}>All Clear</Button>
       <DynamicTable rows={filteredData} setData={setData} />
     </>
   );

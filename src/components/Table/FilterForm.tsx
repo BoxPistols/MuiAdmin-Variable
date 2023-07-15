@@ -23,8 +23,6 @@ const StyledFormControl = styled(FormControl)`
   min-width: 180px;
 `;
 
-
-
 export const FilterForm: React.FC<FilterFormProps> = ({ title, setTitle, price, setPrice, stock, setStock, category, setCategory, brand, setBrand, rating, setRating, active, setActive }) => {
   return (
     <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', mb: 2 }}>
